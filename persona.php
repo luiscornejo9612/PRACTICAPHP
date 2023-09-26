@@ -43,5 +43,29 @@
         
     </div>
 
+    <h1>Lista de cursos</h1>
+        <h2>Numero de cursos apuntats: 3</h2>
+
+    
+    <?php 
+        //contante
+        define("IVA", 0.21);
+        //array multidimencional
+        $cursos = array(
+        array("ID", "NOM","DESC","PREU"),
+        array("1", "PHP","Introduccio a PHP",15.5),
+        array("2", "Laravel","Laravel per experts", 30),
+        array("3", "Django","Dominant Django",10),
+        );
+        ?>
+    <div>
+        <p><?php echo $cursos[1][1];?></p>
+        <p><?php echo $cursos[1][2];?></p>
+        <p>El preu del libre amb IVA:<?php ?></p>
+
+    </div>
+
+
+
 </body>
 </html>
